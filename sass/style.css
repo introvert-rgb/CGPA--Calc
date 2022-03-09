@@ -21,6 +21,10 @@ body {
   position: relative;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .hidden {
   opacity: 0;
   z-index: -1;
@@ -32,8 +36,11 @@ body {
   width: 100vw;
   position: absolute;
   top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .head {
@@ -270,5 +277,89 @@ body {
 .okay-btn {
   margin-top: 2em;
   padding: 1em 2em;
+}
+
+.creator {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.creator .heart {
+  color: red;
+}
+
+@media (max-width: 760px) {
+  body {
+    height: unset;
+  }
+  .hidden {
+    opacity: 0;
+    z-index: -1;
+    display: none;
+  }
+  .main-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-body .left-side {
+    width: 100%;
+  }
+  .main-body .left-side .intro-open .intro-head {
+    font-size: 2.5rem;
+  }
+  .main-body .left-side .intro-open .intro-text {
+    font-size: 1.8rem;
+    padding: 0em;
+  }
+  .main-body .left-side .detail {
+    padding: 1em 0em;
+  }
+  .main-body .right-side {
+    width: 100%;
+    margin-top: 0em;
+    padding: 1em 0em;
+  }
+  .main-body .right-side .right-intro {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  .main-body .right-side .form {
+    width: 100%;
+  }
+  .main-body .right-side .form .subjects .div .subjectName {
+    display: block;
+  }
+  .main-body .right-side .form .subjects .btn-cover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .overlay {
+    height: 180vh;
+  }
+  .doneMsg {
+    width: 280px;
+    padding: 1em;
+    -webkit-transform: translate(50%, 50%);
+            transform: translate(50%, 50%);
+  }
+  .box p {
+    font-size: 1rem;
+  }
+  .box .grade-container .grade {
+    font-size: 2rem;
+  }
+  .box .grade-container .cgpa {
+    font-size: 1.2rem;
+  }
+  .okay-btn {
+    padding: 0.7em 1.5em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

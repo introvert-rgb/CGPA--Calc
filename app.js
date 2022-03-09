@@ -41,6 +41,7 @@ let mySet = [];
 let gradeWeightages = 0; //returns grade points of respective semesters
 let sixthSem = document.querySelector('.sixth');
 let dropSelect = 0;
+let body = document.querySelector('.body');
 let grade = document.querySelector('.grade');
 let Btn = document.querySelector('.calc-btn');
 let doneMsg = document.querySelector('.doneMsg');
@@ -59,7 +60,7 @@ dropBtn.addEventListener('change', () => {
     }
     if (mySet.length === 6) {
         calculate(mySet);
-        console.log('drop')
+
     }
 
 });
@@ -125,17 +126,16 @@ function checkingGrades() {
             } else {
                 alert('enter valid marks')
             }
-            console.log('input');
-            console.log(dropSelect);
+
             if (dropSelect !== 'semester06') {
                 if (mySet.length === 6) {
                     calculate(mySet);
-                    console.log(mySet)
+
                 }
             } else {
                 if (mySet.length === 7) {
                     calculate(mySet);
-                    console.log(mySet)
+
                 }
             }
         });
@@ -151,7 +151,7 @@ function calculate(marks) {
     for (let mark in marks) {
         finalArray[mark] = (gradeArray[mark] * gradeWeightages[mark]);
     }
-    console.log(finalArray);
+
     final(finalArray);
 }
 
@@ -174,6 +174,8 @@ Btn.addEventListener('click', () => {
         overlay.classList.toggle('hidden');
         doneMsg.classList.toggle('hidden');
     }
+
+
 
 
 });
