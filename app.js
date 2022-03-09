@@ -45,6 +45,7 @@ let grade = document.querySelector('.grade');
 let Btn = document.querySelector('.calc-btn');
 let doneMsg = document.querySelector('.doneMsg');
 let overlay = document.querySelector('.overlay');
+let okayBtn = document.querySelector('.okay-btn');
 dropBtn.addEventListener('change', () => {
     dropSelect = dropBtn.value;
 
@@ -169,15 +170,18 @@ function final(numbers) {
 }
 checkingGrades();
 Btn.addEventListener('click', () => {
-    // if (finalArray.length == 6 || finalArray.length == 7) {
-    //     overlay.classList.toggle('hidden');
-    //     doneMsg.classList.toggle('hidden');
-    // }
-    overlay.classList.toggle('hidden');
-    doneMsg.classList.toggle('hidden');
+    if (finalArray.length == 6 || finalArray.length == 7) {
+        overlay.classList.toggle('hidden');
+        doneMsg.classList.toggle('hidden');
+    }
+
 
 });
 overlay.addEventListener('click', () => {
+    overlay.classList.toggle('hidden');
+    doneMsg.classList.toggle('hidden');
+})
+okayBtn.addEventListener('click', () => {
     overlay.classList.toggle('hidden');
     doneMsg.classList.toggle('hidden');
 })
