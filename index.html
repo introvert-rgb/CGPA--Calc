@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/style.css">
+    <title>CGPA Calc</title>
+</head>
+
+<body>
+    <header class="head">
+        <div class="logo">GetCGPA</div>
+    </header>
+    <div class="main-body">
+        <div class="left-side">
+            <div class="intro-open">
+                <p class="intro-head">Welcome!
+
+                </p>
+                <p class="intro-text">Students</p>
+            </div>
+            <p class="detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque consequuntur dolore accusantium beatae esse culpa soluta. Recusandae aliquid dolorem distinctio.</p>
+        </div>
+        <div class="right-side">
+            <div class="right-intro">
+                Semester Marksheet
+
+            </div>
+            <div class="form">
+                <label for="semester"> <span class="semesterSelect"> Select the Semester:</span></label>
+
+                <select name="semester" id="semester">
+                        <option value="semester01">Semester-01</option>
+                        <option value="semester02">Semester-02</option>
+                        <option value="semester03">Semester-03</option>
+                        <option value="semester04">Semester-04</option>
+                        <option value="semester05">Semester-05</option>
+                        <option value="semester06">Semester-06</option>
+                </select>
+                <div class="subjects">
+                    <p>Enter the marks: </p>
+                    <div class="div">
+                        <label for="Subject-01">
+                    <span class="subjectCode">BCHE/BCHH-111</span>
+                    <span class="subjectName"> Language(Hindi/English):</span>
+                    </label>
+                        <input min="1" max="100" class="inputNum" type="number" name="paper-01" id="Subject-01">
+                    </div>
+                    <div class="div">
+                        <label for="Subject-02">
+                    <span class="subjectCode">BCH-111</span>
+                    <span class="subjectName"> Financial Accounting - I:</span>
+                    </label>
+                        <input min="1" max="100" class="inputNum" type="number" name="paper-02" id="Subject-02">
+                    </div>
+                    <div class="div">
+                        <label for="Subject-03">
+                    <span class="subjectCode">BCH-112</span>
+                   <span class="subjectName"> Principles Of Management:</span>
+                    </label>
+                        <input min="1" max="100" class="inputNum" type="number" name="paper-03" id="Subject-03">
+                    </div>
+                    <div class="div">
+                        <label for="Subject-04">
+                    <span class="subjectCode">BCH-113</span>
+                   <span class="subjectName"> Business Environment:</span>
+                    </label>
+                        <input min="1" max="100" class="inputNum" type="number" name="paper-04" id="Subject-04">
+                    </div>
+                    <div class="div">
+                        <label for="Subject-05">
+                    <span class="subjectCode">BCH-114</span>
+                  <span class="subjectName">  Monetary Theory:</span>
+                    </label>
+                        <input min="1" max="100" class="inputNum" type="number" name="paper-05" id="Subject-05">
+                    </div>
+                    <div class="div">
+                        <label for="Subject-06">
+                    <span class="subjectCode">BCH-115</span>
+                   <span class="subjectName">  Fundamentals Of Marketing:</span>
+                    </label>
+                        <input min="1" max="100" class="inputNum" type="number" name="paper-06" id="Subject-06">
+                    </div>
+                    <div class="div sixth hidden">
+                        <label for="Subject-07">
+                    <span class="subjectCode">BCH-115</span>
+                   <span class="subjectName">  Fundamentals Of Marketing:</span>
+                    </label>
+                        <input min="1" max="100" class="inputNum" type="number" name="paper-06" id="Subject-06">
+                    </div>
+
+                    <div class="btn-cover">
+                        <button class="calc-btn btn">Get CGPA</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="doneMsg hidden ">
+        <div class="box ">
+            <p>You Scored</p>
+            <div class="grade-container">
+
+                <p class="grade">7.80 </p> <span class="cgpa">CGPA</span>
+
+            </div>
+            <button class="okay-btn btn">
+                Okay !
+            </button>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
