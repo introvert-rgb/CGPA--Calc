@@ -256,6 +256,10 @@ body {
   margin: 0;
 }
 
+.main-body .right-side .form .subjects .div input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .main-body .right-side .form .subjects .btn-cover {
   padding: 1em 0em;
 }
